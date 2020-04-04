@@ -1,0 +1,8 @@
+var laugh = function(i){/* finish the function expression */
+var ha="";
+for (i;i>0;i--){
+    ha=ha+"ha";
+    }
+    return ha+"!";
+};
+console.log(laugh(10));
