@@ -1,0 +1,7 @@
+Programming Quiz: Cry (5-5)
+
+var cry = function llolar() {
+    return "boohoo!";
+};
+
+console.log(cry());
