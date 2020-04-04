@@ -1,0 +1,9 @@
+function laugh(num){
+    var ha="";
+    while(num>0){
+        ha=ha+"ha";
+       num=num-1;
+    } 
+    return ha+"!";
+}
+console.log(laugh(20));
