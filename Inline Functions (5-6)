@@ -1,0 +1,10 @@
+function emotions(myString, myFunc) {
+    console.log("I am " + myString + ", " + myFunc(4));
+}
+emotions("gonna be bomb!", function laugh(num){
+var ha="";
+for (i=0;i<num;i++){
+    ha=ha+"ha";
+    }
+    return ha+"!";
+});
