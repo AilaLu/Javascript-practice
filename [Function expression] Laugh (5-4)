@@ -1,0 +1,29 @@
+/*
+ * Programming Quiz: Laugh (5-4)
+ */
+
+/*
+ * QUIZ REQUIREMENTS
+ * - Your code should have a variable `laugh`
+ * - Your code should include an anonymous function expression stored in the variable `laugh`
+ * - Your anonymous function expression should take one argument
+ * - Your anonymous function expression should return the correct number of `hahaha`\'s
+ */
+
+
+
+var laugh = function(num){
+    var ha= "";
+    for (i = 0; i < num; i++){
+        ha += "ha";
+    }
+    return ha+"!";
+};
+console.log(laugh(5));
+/* finish the function expression */
+
+
+//let's break it down:
+//1. make a for loop that can do hahaha's, with declaring a string variable to store the hahas
+//2. declare an function expression that store it in the variable "laugh", remember to return the result 
+//3. call this variable "laugh" :D
