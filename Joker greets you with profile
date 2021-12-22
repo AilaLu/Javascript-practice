@@ -1,0 +1,42 @@
+//This laugh function will return the max_ha of ha's you call
+var laugh = function(max_ha){
+    var ha = '';
+    for (i = 0; i < max_ha; i++){
+        ha += 'ha';
+    }
+    return ha+'!';
+};
+
+function return_laugh(func){//Declaire a function that calls on variable laugh
+    return 'Hello my friend, '+func(3)+' Why so serious?'; //and add hello, why so serious 
+}
+
+var result = return_laugh(laugh);
+console.log(result);
+
+
+//This objects facebookProfile contains 4 methods that you can change messeges and friends with 
+var facebookProfile = {
+    name: "Joker",
+    friends: ['Thor', 'Captain America', 'Iron man', 'Spiderman', 'Back Widow', 'Captain Marvel'],
+    messages: ["Guns are too quick", "Very poor choice of words", 'I\'m not a monster', 'Now I\'m alway smiling:)'],
+    postMessage: function(message) {
+        return facebookProfile.messages.push(message);
+    },
+    deleteMessage: function(index) {
+        return facebookProfile.messages.splice(index,1);
+    },
+    addFriend: function(name) {
+       return  facebookProfile.friends.push(name);
+    },
+    removeFriend: function(index) {
+        return facebookProfile.friends.splice(index, 1);
+    }
+};
+
+facebookProfile.postMessage("Let's put a smile on that face");//add beep into message
+facebookProfile.deleteMessage(1,1);//Delete 'Very poor choice of words'
+facebookProfile.addFriend('Dr. Strange');//any num of friend you'd like to add
+facebookProfile.removeFriend(0,1);//any num of friend you'd like to remove
+console.log(facebookProfile.messages);
+console.log(facebookProfile.friends);
