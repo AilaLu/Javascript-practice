@@ -1,0 +1,44 @@
+/*
+ * Programming Quiz: Facebook Friends (7-5)
+ */
+
+/*
+ * QUIZ REQUIREMENTS
+ * - Your code should have an object `facebookProfile`
+ * - The `facebookProfile` object should have the `name` (string), `friends` (number), and `messages` (array of strings) property
+ * - Your `facebookProfile` object should have the `postMessage()`, `deleteMessage()`, `addFriend()` and `removeFriend()` method
+ * - Carefully implement the desired functionality of each method, as decribed above
+ */
+
+
+// TIP - 
+// In an array, 
+// - addition at the end is done using push() method
+// - addition at a specific index is done using splice() method
+// - deletion from the beginning is done using pop() method
+// - deletion from a specific index is done using splice() method
+
+var facebookProfile = {
+    name: "Moonman",
+    friends: 6,
+    messages: ["wowowowo", "wha", "yeeee", "heee"],
+    postMessage: function(message) {
+        return facebookProfile.messages.push(message);
+    },
+    deleteMessage: function(index) {
+        return facebookProfile.messages.splice(index,1);
+    },
+    addFriend: function(num) {
+       return  facebookProfile.friends+= num;
+    },
+    removeFriend: function(num) {
+        return facebookProfile.friends-= num;
+    }
+};
+
+facebookProfile.postMessage("beep");//add beep into message
+facebookProfile.deleteMessage(1,1);//delete 'wha'
+facebookProfile.addFriend(6);//any num of friend you'd like to add
+facebookProfile.removeFriend(2);//any num of friend you'd like to remove
+console.log(facebookProfile.messages);
+console.log(facebookProfile.friends);
