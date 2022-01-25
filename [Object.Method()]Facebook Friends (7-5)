@@ -35,8 +35,7 @@ var facebookProfile = {
     removeFriend: function(num) {
         return facebookProfile.friends-= num;
     }
-};
-```
+};```
 
 facebookProfile.postMessage("beep");//add beep into message
 facebookProfile.deleteMessage(1,1);//delete 'wha'
