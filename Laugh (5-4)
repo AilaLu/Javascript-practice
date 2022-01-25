@@ -1,3 +1,4 @@
+```
 var laugh = function(i){/* finish the function expression */
 var ha="";
 for (i;i>0;i--){
@@ -6,3 +7,4 @@ for (i;i>0;i--){
     return ha+"!";
 };
 console.log(laugh(10));
+```
