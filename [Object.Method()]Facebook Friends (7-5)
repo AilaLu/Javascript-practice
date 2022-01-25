@@ -18,7 +18,7 @@
 // - deletion from the beginning is done using pop() method
 // - deletion from a specific index is done using splice() method
 
-```
+```python
 var facebookProfile = {
     name: "Moonman",
     friends: 6,
