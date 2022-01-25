@@ -18,6 +18,7 @@
 // - deletion from the beginning is done using pop() method
 // - deletion from a specific index is done using splice() method
 
+```
 var facebookProfile = {
     name: "Moonman",
     friends: 6,
@@ -35,6 +36,7 @@ var facebookProfile = {
         return facebookProfile.friends-= num;
     }
 };
+```
 
 facebookProfile.postMessage("beep");//add beep into message
 facebookProfile.deleteMessage(1,1);//delete 'wha'
