@@ -1,4 +1,4 @@
-```
+```python
 var laugh = function(i){/* finish the function expression */
 var ha="";
 for (i;i>0;i--){
