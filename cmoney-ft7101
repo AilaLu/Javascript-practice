@@ -1,0 +1,22 @@
+import java.util.Scanner;
+
+@SuppressWarnings("ALL")
+public class Main{
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        walk(6000, 50); // output 2
+        walk(10000, 50); //output 3
+    }
+    //T = 距離
+    //D = 步伐大小
+    public static void walk(int T, int D){
+        int hour=60;
+        double time;
+        time = T/D;
+        int result;
+        result= (int) Math.floor(time/hour);
+        System.out.println(result);
+    }
+
+}
+
