@@ -1,0 +1,21 @@
+
+import java.util.Scanner;
+
+public class Ot{
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        calculate(1,1,1); //output 9
+        calculate(1,4,2); //output 5
+    }
+    public static void calculate(int a,int b, int c){
+        int x;
+        int y;
+        int result;
+        x = 2 * a;
+        y = (int) Math.floor(6 / b);
+        result = x+y+c;
+        System.out.println(result);
+
+    }
+}
+
